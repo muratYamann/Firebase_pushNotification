@@ -26,11 +26,12 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService{
     public void onTokenRefresh() {
         String token = FirebaseInstanceId.getInstance().getToken();
         Log.d(TAG, "Token: " + token);
-
         sendRegistrationToServer(token);
     }
 
     private void sendRegistrationToServer(String token) {
         // token'ı servise gönderme işlemlerini bu methodda yapmalısınız
     }
+
+    //TODO: NOT : Arkadaşlar sdk Managerdan 1.Google Play Services  2.Google Repository yuklü degilse yukleyin
 }

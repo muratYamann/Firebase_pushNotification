@@ -33,7 +33,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService  {
             //Json formatındaki datayı parse edip kullanabiliriz.
             // Biz direk datayı Push Notification olarak bastırıyoruz
 
-            sendNotification("Mobilhanem.com",""+remoteMessage.getData());
+            sendNotification("yamankod.com",""+remoteMessage.getData());
 
         }
 
